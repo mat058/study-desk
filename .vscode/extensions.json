@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"svelte.svelte-vscode",
+		"esbenp.prettier-vscode",
+		"eamodio.gitlens",
+		"mongodb.mongodb-vscode",
+		"anthropic.claude-code",
+		"yzhang.markdown-all-in-one"
+	]
+}
