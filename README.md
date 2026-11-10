@@ -6,7 +6,7 @@
 |---|---|
 | Projekttitel | StudyDesk |
 | Verfasser/in | Matteo Rotzer, _[Klasse]_ |
-| GitHub-Repository | _[Link]_ |
+| GitHub-Repository | https://github.com/mat058/study-desk |
 | Aktuelle App | _[Link]_ |
 | Getestete Version | _[Link; Commit/Tag]_ |
 | Testzugänge | _[Testkonten je Rolle oder Bereitstellungsweg; andernfalls «Nicht erforderlich»]_ |
