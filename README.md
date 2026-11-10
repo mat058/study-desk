@@ -11,7 +11,7 @@
 | Getestete Version | _[Link; Commit/Tag]_ |
 | Testzugänge | _[Testkonten je Rolle oder Bereitstellungsweg; andernfalls «Nicht erforderlich»]_ |
 | Figma / Referenz-Mockup | _[Direkter Link]_ |
-| Weitere Artefakte [Optional] | _[Links, z. B. User Journey Map oder Projektboard]_ |
+| Weitere Artefakte [Optional] | Projektboard: https://github.com/users/mat058/projects/2 |
 
 > **Zugriff:** Stellt sicher, dass alle Dozierenden auf das Repository, die App und die verlinkten Artefakte zugreifen können.
 

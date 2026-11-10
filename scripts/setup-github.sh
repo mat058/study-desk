@@ -17,20 +17,26 @@ lbl "setup"        "bfdadc" "Infrastruktur, Tooling, Deployment"
 lbl "ki"           "f9d0c4" "KI-/Agenten-Workflow"
 
 echo "▶ Meilensteine"
-ms() { gh api "repos/$REPO/milestones" -f title="$1" -f due_on="$2T22:59:00Z" -f description="$3" >/dev/null 2>&1 || echo "  (existiert schon: $1)"; }
-ms "1 Understand & Define" "2026-11-15" "Problem, Zielgruppe, HMW, Recherche, Personas"
-ms "2 Sketch"              "2026-11-15" "2–3 Varianten skizzieren (Übung 9)"
-ms "3 Decide"              "2026-11-22" "Variante wählen, Journey Map, Figma-Mockup (Übung 10)"
-ms "4 Prototype"           "2026-12-13" "Implementierung, Prototyping mit KI (Übung 11)"
-ms "5 Validate"            "2026-12-20" "Usability-Test (Pflichttermin), Auswertung, Verbesserungen"
+# Kein Wochentakt: Meilensteine ohne Fälligkeit, nur der Usability-Test hat einen fixen Termin
+ms() { if [ -n "$2" ]; then gh api "repos/$REPO/milestones" -f title="$1" -f due_on="$2T22:59:00Z" -f description="$3" >/dev/null 2>&1 || echo "  (existiert schon: $1)";
+       else gh api "repos/$REPO/milestones" -f title="$1" -f description="$3" >/dev/null 2>&1 || echo "  (existiert schon: $1)"; fi; }
+ms "0 Setup"               ""           "Repo, Datenbank, Deployment, Tooling"
+ms "1 Understand & Define" ""           "Problem, Zielgruppe, HMW, Recherche, Personas, Requirements"
+ms "2 Sketch"              ""           "2–3 Varianten skizzieren (Übung 9)"
+ms "3 Decide"              ""           "Variante wählen, Workflows, Figma-Mockup (Übung 10)"
+ms "4 Prototype"           ""           "Implementierung, Prototyping mit KI (Übung 11)"
+ms "5 Validate"            "2026-12-14" "Usability-Test (Pflichttermin Woche 14), Auswertung, Verbesserungen"
 
 echo "▶ Erste Issues"
 iss() { gh issue create --repo "$REPO" --title "$1" --label "$2" --milestone "$3" --body "$4" >/dev/null; echo "  + $1"; }
-iss "MongoDB Atlas einrichten und .env setzen" "setup" "4 Prototype" "Cluster M0 (Frankfurt), DB-User, Network Access, Verbindung testen."
-iss "Netlify-Deployment einrichten" "setup" "4 Prototype" "Repo verbinden, DB_URI als Env-Variable, erster Deploy, URL in README."
+# Bereits erledigte Setup-Schritte als geschlossene Issues (nachvollziehbare Historie)
+done_iss() { url=$(gh issue create --repo "$REPO" --title "$1" --label "setup" --milestone "0 Setup" --body "$2"); gh issue close "$url" --comment "$3" >/dev/null; echo "  ✓ $1"; }
+done_iss "MongoDB Atlas einrichten und .env setzen" "Eigenes Atlas-Projekt, Cluster M0, DB-User, Network Access, Verbindung testen." "Erledigt, siehe D8 und docs/organisation/2026-11-10_mongodb-verbunden.png"
+done_iss "Netlify-Deployment einrichten" "Repo verbinden, DB_URI als Env-Variable, erster Deploy, URL in README." "Erledigt: https://study-desk-mr.netlify.app – siehe D9"
 iss "Problem & Zielgruppe beschreiben (Kap. 1, 3.1)" "docs,artefakt" "1 Understand & Define" "Problem, Ziele, Zielgruppe, Stakeholder."
 iss "How-Might-We-Fragen & Recherche bestehender Tools" "artefakt" "1 Understand & Define" "HMW-Fragen + Analyse Moodle, Notion-Vorlagen, MyStudyLife u. a."
 iss "Proto-Personas erstellen" "artefakt" "1 Understand & Define" "1–2 Proto-Personas für Studierende."
+iss "Requirements detaillieren (User Stories, Priorisierung)" "artefakt,erweiterung" "1 Understand & Define" "Anforderungen aus RE ableiten: User Stories mit Akzeptanzkriterien, MoSCoW-Priorisierung."
 iss "Skizzen-Varianten (Übung 9)" "artefakt" "2 Sketch" "2–3 Varianten selbst skizzieren → docs/02-sketch/original, KI-Verbesserung → ai-improved."
 
 echo "▶ Project Board"
