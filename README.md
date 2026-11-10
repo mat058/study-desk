@@ -7,7 +7,7 @@
 | Projekttitel | StudyDesk |
 | Verfasser/in | Matteo Rotzer, _[Klasse]_ |
 | GitHub-Repository | https://github.com/mat058/study-desk |
-| Aktuelle App | _[Link]_ |
+| Aktuelle App | https://study-desk-mr.netlify.app |
 | Getestete Version | _[Link; Commit/Tag]_ |
 | Testzugänge | _[Testkonten je Rolle oder Bereitstellungsweg; andernfalls «Nicht erforderlich»]_ |
 | Figma / Referenz-Mockup | _[Direkter Link]_ |

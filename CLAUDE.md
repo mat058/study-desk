@@ -20,7 +20,7 @@
 
 ## Git
 - Conventional Commits auf Deutsch: `feat: …`, `fix: …`, `docs: …`, `refactor: …`, `chore: …`; Issue referenzieren (`#12`).
-- Kleine Commits, ein Thema pro Commit. Features auf Branch `feat/<name>`, Merge via Pull Request.
+- Kleine Commits, ein Thema pro Commit. Matteo committet selbst: Claude sagt nach jedem abgeschlossenen Schritt, ob jetzt committet werden soll, und schlägt die Nachricht vor. Features auf Branch `feat/<name>`, Merge via Pull Request.
 
 ## Doku-Regeln (WICHTIG – immer einhalten)
 Nach **jeder** abgeschlossenen Aufgabe am Ende der Antwort einen Block ausgeben:
@@ -32,6 +32,7 @@ Nach **jeder** abgeschlossenen Aufgabe am Ende der Antwort einen Block ausgeben:
 - KI-Log: <Eintrag für docs/ai-log.md vorschlagen>
 - Entscheid: <falls ein Entscheid getroffen wurde → docs/decisions.md>
 - Quellen: <falls fremde Inhalte → docs/sources.md>
+💾 COMMIT: <«jetzt committen» + fertige Nachricht im Format `typ: Beschreibung` – oder «noch nicht, weil …»>
 🚀 VERBESSERUNG: <1–2 konkrete Ideen, wie die App besser wird (Usability, Feedback, Extras)>
 ❗ FEHLT NOCH: <was in App oder Doku als Nächstes fehlt>
 ```
