@@ -44,10 +44,16 @@
 
 ## 1. Ausgangslage
 Kurz beschreiben, welches Problem adressiert wird und welches Ergebnis angestrebt ist. Wem nützt die Lösung, wer ist beteiligt oder betroffen?
-- **Problem:** _[Das Problem ist identifiziert, verständlich beschrieben und optional mit Beispielen illustriert]_  
-- **Ziele:** _[stichwortartig oder einige Sätze]_  
-- **Primäre Zielgruppe:** _[kurz beschreiben]_  
-- **Weitere Stakeholder [Optional]:** _[z. B. Verwaltung, Geschäftsleitung]_  
+- **Problem:** Studierende erhalten Termine, Abgaben und Leistungsnachweise über viele Kanäle (Moodle, Semesterprogramm-PDFs, E-Mail, Teams). Es gibt keinen vollständigen, verlässlichen Überblick: Die Moodle-Deadline-Ansicht ist unvollständig, Angaben widersprechen sich teilweise zwischen den Kanälen, und mangels Schnittstellen muss alles manuell in eigene Tools (z. B. Apple Erinnerungen, Notion) übertragen und nachgeführt werden. *Beispiel:* Für dieselbe Abgabe stehen in Moodle, im Semesterprogramm und in einer Mail unterschiedliche Daten – man muss jedes Mal nachfragen, welches gilt. Allein das Erfassen zu Semesterbeginn dauert rund eine Woche.
+- **Ziele:**
+  - Alle Module, Abgaben und Leistungsnachweise eines Semesters an **einem** Ort
+  - Auf einen Blick sehen, was als Nächstes fällig ist und welche Wochen intensiv werden
+  - Widersprüchliche oder geänderte Termine erkennen statt übersehen
+  - Weniger Aufwand fürs Erfassen und Nachführen
+- **Primäre Zielgruppe:** Bachelor-Studierende der ZHAW (insbesondere Vollzeitstudierende mit vielen Modulen und Studierende mit Nebenjob), die ihr Semester selbst organisieren.
+- **Weitere Stakeholder [Optional]:** Dozierende (pflegen Moodle und Semesterprogramme; Quelle der Termine), Mitstudierende (Austausch über gültige Termine).
+
+Details: [Übung 8 – Understand & Define (PDF)](docs/01-understand/Uebung8_Understand-Define_StudyDesk_Rotzer.pdf)
 
 
 ## 2. Lösungsidee
@@ -60,8 +66,18 @@ Beschreibt die Lösungsidee.
 Die Durchführung erfolgt phasenbasiert; dokumentiert die wichtigsten Ergebnisse je Phase.
 
 ### 3.1 Understand & Define
-- **Zielgruppenverständnis:** _[Problemraumanalyse, Recherche, (Proto-)Personas]_
-- **Wesentliche Erkenntnisse:** _[Stichpunkte]_
+- **Zielgruppenverständnis:**
+  - *Problemräume:* vier Problemräume gesammelt (fehlender zentraler Überblick, fehlende Schnittstellen, zu viele Apps für den gleichen Zweck, Faszination KI); gewählt wurde «Studium organisieren», weil selbst täglich betroffen und die Zielgruppe für Tests direkt erreichbar ist.
+  - *Problemraum-Analyse:* Nutzergruppen (Vollzeit, Vollzeit mit Nebenjob, Teilzeit, Erstsemestrige), heutige Tools mit Schwächen, typischer Ablauf bei einer neuen Abgabe, Bedürfnisse.
+  - *How Might We:* (1) Wie könnten wir Studierenden helfen, alle Abgaben und Leistungsnachweise eines Semesters an einem Ort zuverlässig im Blick zu behalten? (2) Wie könnten wir das Erfassen und Nachführen von Terminen so vereinfachen, dass keine Änderung verloren geht und klar ist, welches Datum gilt? (3) Wie könnten wir Studierenden mit Nebenjob helfen, früh zu erkennen, welche Wochen intensiv werden?
+  - *Recherche:* Moodle, Apple Erinnerungen/Kalender, Notion-Vorlagen, Studienplaner-Apps (z. B. MyStudyLife), To-do-Apps.
+  - *(Proto-)Personas:* _[folgt – Issue #5]_
+  - Vollständige Ausarbeitung: [Antworten Übung 8](docs/01-understand/2026-11-10_antworten-uebung8.md) · [PDF](docs/01-understand/Uebung8_Understand-Define_StudyDesk_Rotzer.pdf)
+- **Wesentliche Erkenntnisse:**
+  - Es gibt viele Tools, aber jedes deckt nur einen Teil ab – der Überblick entsteht erst im Kopf der Studierenden.
+  - Der grösste Aufwand liegt im **Erfassen und Nachführen**, nicht im Anschauen.
+  - **Verlässlichkeit** (welches Datum gilt?) ist mindestens so wichtig wie Vollständigkeit.
+  - Ohne offene Schnittstellen der Hochschulsysteme muss die Lösung manuelles Erfassen so schnell wie möglich machen und Mehrwert *auf* den erfassten Daten bieten (z. B. Widersprüche, Belastung).
 
 ### 3.2 Sketch
 - **Variantenüberblick:** _[kurz]_
