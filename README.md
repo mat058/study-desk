@@ -71,7 +71,7 @@ Die Durchführung erfolgt phasenbasiert; dokumentiert die wichtigsten Ergebnisse
   - *Problemraum-Analyse:* Nutzergruppen (Vollzeit, Vollzeit mit Nebenjob, Teilzeit, Erstsemestrige), heutige Tools mit Schwächen, typischer Ablauf bei einer neuen Abgabe, Bedürfnisse.
   - *How Might We:* (1) Wie könnten wir Studierenden helfen, alle Abgaben und Leistungsnachweise eines Semesters an einem Ort zuverlässig im Blick zu behalten? (2) Wie könnten wir das Erfassen und Nachführen von Terminen so vereinfachen, dass keine Änderung verloren geht und klar ist, welches Datum gilt? (3) Wie könnten wir Studierenden mit Nebenjob helfen, früh zu erkennen, welche Wochen intensiv werden?
   - *Recherche:* Moodle, Apple Erinnerungen/Kalender, Notion-Vorlagen, Studienplaner-Apps (z. B. MyStudyLife), To-do-Apps.
-  - *(Proto-)Personas:* _[folgt – Issue #5]_
+  - *(Proto-)Personas:* [Julian](docs/01-understand/2026-11-10_personas.md#persona-1--julian-der-effiziente-mit-nebenjob) – Vollzeit mit Nebenjob, knappe Zeit, will eine verlässliche Quelle und die Wochen-Auslastung sehen · [Leonie](docs/01-understand/2026-11-10_personas.md#persona-2--leonie-die-erstsemestrige-im-kanal-dschungel) – Erstsemestrige ohne Job, überflutet von Kanälen, braucht sofort «Was ist jetzt dran?».
   - Vollständige Ausarbeitung: [Antworten Übung 8](docs/01-understand/2026-11-10_antworten-uebung8.md) · [PDF](docs/01-understand/Uebung8_Understand-Define_StudyDesk_Rotzer.pdf)
 - **Wesentliche Erkenntnisse:**
   - Es gibt viele Tools, aber jedes deckt nur einen Teil ab – der Überblick entsteht erst im Kopf der Studierenden.

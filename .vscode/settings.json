@@ -3,5 +3,7 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
 	"files.exclude": { "**/.svelte-kit": true, "**/node_modules": true },
-	"markdown.extension.toc.levels": "2..3"
+	"markdown.extension.toc.levels": "2..3",
+	"gitlens.fileAnnotations.dismissOnEscape": false,
+	"gitlens.fileAnnotations.preserveWhileEditing": false
 }
