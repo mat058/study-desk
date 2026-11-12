@@ -23,7 +23,7 @@
 - Kleine Commits, ein Thema pro Commit. Matteo committet selbst: Claude sagt nach jedem abgeschlossenen Schritt, ob jetzt committet werden soll, und schlägt die Nachricht vor. Features auf Branch `feat/<name>`, Merge via Pull Request.
 
 ## Doku-Regeln (WICHTIG – immer einhalten)
-Nach **jeder** abgeschlossenen Aufgabe am Ende der Antwort einen Block ausgeben:
+Bei **jeder** Antwort **ganz oben** einen kurzen Block «⚡ JETZT WICHTIG» ausgeben (Matteo liest unten nicht mehr). Nur Zeilen aufführen, die gerade zutreffen – leere/irrelevante weglassen, je max. 1 Zeile:
 
 ```
 📋 DOKU
