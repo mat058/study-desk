@@ -23,6 +23,8 @@
 - Kleine Commits, ein Thema pro Commit. Matteo committet selbst: Claude sagt nach jedem abgeschlossenen Schritt, ob jetzt committet werden soll, und schlägt die Nachricht vor. Features auf Branch `feat/<name>`, Merge via Pull Request.
 
 ## Doku-Regeln (WICHTIG – immer einhalten)
+**Die gesamte Dokumentation ist Aufgabe von Claude:** README (alle Kapitel), `docs/` (ai-log, decisions, sources, SCREENSHOTS-Checkliste, Phasen-Artefakte) nach jedem Schritt selbst nachführen – nicht nur vorschlagen. Matteo liefert Inhalte/Entscheide und prüft; Claude meldet oben kurz, was angepasst wurde.
+
 Bei **jeder** Antwort **ganz oben** einen kurzen Block «⚡ JETZT WICHTIG» ausgeben (Matteo liest unten nicht mehr). Nur Zeilen aufführen, die gerade zutreffen – leere/irrelevante weglassen, je max. 1 Zeile:
 
 ```

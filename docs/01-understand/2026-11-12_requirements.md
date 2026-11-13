@@ -190,7 +190,7 @@ Jede Form hat Validierung + sichtbares Feedback (Erfolg/Fehler) – gilt für al
 
 ## 3. MoSCoW-Priorisierung
 
-Leitlinie: **Must** = Mindestumfang (60 P.), muss bis zum Usability-Test (14.12.) stabil laufen. **Could** = Erweiterungen (40 P.), je nach Zeit; jede wird nach Kap.-4-Schema dokumentiert.
+Leitlinie: **Must** = Mindestumfang (Teil A, 60 P.), muss bis zum Usability-Test (14.12.) stabil laufen. **Could** = Produkt-/Funktions-Erweiterungen (Teil B, max. 15 P.) – lieber 1–2 Erweiterungen sehr gut umgesetzt und dokumentiert als viele halbe; jede wird nach Kap.-4-Schema dokumentiert. (Die übrigen 25 P. von Teil B: hohe Qualität 10, Methoden/Artefakte 10, Projektorganisation 5.)
 
 | Must | Should | Could (Erweiterungen) | Won't (bewusst nicht) |
 |---|---|---|---|

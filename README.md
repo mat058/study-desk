@@ -5,7 +5,7 @@
 | Angabe | Inhalt |
 |---|---|
 | Projekttitel | StudyDesk |
-| Verfasser/in | Matteo Rotzer, _[Klasse]_ |
+| Verfasser/in | Matteo Rotzer, _[Klasse folgt]_ |
 | GitHub-Repository | https://github.com/mat058/study-desk |
 | Aktuelle App | https://study-desk-mr.netlify.app |
 | Getestete Version | _[Link; Commit/Tag]_ |
@@ -58,9 +58,19 @@ Details: [Übung 8 – Understand & Define (PDF)](docs/01-understand/Uebung8_Und
 
 ## 2. Lösungsidee
 Beschreibt die Lösungsidee.
-- **Kernfunktionalität:** _[Workflows kurz nennen und optional illustrieren]_  
-- **Annahmen [Optional]:** _[welche Hypothesen werden geprüft?]_
-- **Abgrenzung [Optional]:** _[Was gehört explizit nicht zum Umfang?]_
+StudyDesk ist ein persönlicher Semester-Hub: Module, Leistungsnachweise und Deadlines werden an **einem** Ort erfasst, und das Dashboard zeigt sofort, was als Nächstes dran ist.
+
+- **Kernfunktionalität:** (Details: [Requirements – Epics, User Stories, MoSCoW](docs/01-understand/2026-11-12_requirements.md))
+  - *Konto:* Registrieren, an- und abmelden; jede Person sieht nur ihre eigenen Daten.
+  - *Module verwalten:* Modul erfassen, bearbeiten, löschen (Name, Kürzel, Semester, ECTS, Dozierende, Farbe); pro Modul ein **Modul-Space** mit allen Infos und Abgaben.
+  - *Abgaben verwalten:* Abgabe/Prüfung/Übung mit Modul, Typ, Deadline und Priorität erfassen, bearbeiten, löschen; Status mit einem Klick ändern (offen → in Arbeit → erledigt).
+  - *Überblick:* Dashboard mit den nächsten fälligen Abgaben und Schnellbuttons «+ Abgabe» / «+ Modul».
+  - *Geplante Ergänzungen (Should/Could):* Filter, Notizen, Fortschritt, Kalenderansicht, Semester-Archiv, PDF-Import von Semesterprogramm und Modulbeschreibung, Noten & Notenpunkte, Lernzeit.
+- **Annahmen [Optional]:** (werden im Usability-Test geprüft)
+  - Eine Abgabe lässt sich in **unter 30 Sekunden** erfassen – schnell genug, dass Studierende die App wirklich nachführen.
+  - Das Dashboard beantwortet die Frage «Was ist jetzt dran?» ohne weiteres Klicken.
+  - Ein Modul-Space pro Modul wird als übersichtlicher empfunden als die Suche in den einzelnen Moodle-Kursen.
+- **Abgrenzung [Optional]:** Keine direkte Anbindung an Moodle oder andere Hochschulsysteme (keine offene Schnittstelle), keine KI-Erkennung von PDFs (falls Import, dann reine Code-Erkennung), keine Gruppen-/Teilen-Funktionen, keine Push- oder Mail-Benachrichtigungen, keine native Mobile-App (Web-App, responsive).
 
 ## 3. Vorgehen & Artefakte
 Die Durchführung erfolgt phasenbasiert; dokumentiert die wichtigsten Ergebnisse je Phase.
@@ -72,6 +82,7 @@ Die Durchführung erfolgt phasenbasiert; dokumentiert die wichtigsten Ergebnisse
   - *How Might We:* (1) Wie könnten wir Studierenden helfen, alle Abgaben und Leistungsnachweise eines Semesters an einem Ort zuverlässig im Blick zu behalten? (2) Wie könnten wir das Erfassen und Nachführen von Terminen so vereinfachen, dass keine Änderung verloren geht und klar ist, welches Datum gilt? (3) Wie könnten wir Studierenden mit Nebenjob helfen, früh zu erkennen, welche Wochen intensiv werden?
   - *Recherche:* Moodle, Apple Erinnerungen/Kalender, Notion-Vorlagen, Studienplaner-Apps (z. B. MyStudyLife), To-do-Apps.
   - *(Proto-)Personas:* [Julian](docs/01-understand/2026-11-10_personas.md#persona-1--julian-der-effiziente-mit-nebenjob) – Vollzeit mit Nebenjob, knappe Zeit, will eine verlässliche Quelle und die Wochen-Auslastung sehen · [Leonie](docs/01-understand/2026-11-10_personas.md#persona-2--leonie-die-erstsemestrige-im-kanal-dschungel) – Erstsemestrige ohne Job, überflutet von Kanälen, braucht sofort «Was ist jetzt dran?».
+  - *Requirements (zusätzliche Methode aus Requirements Engineering):* 7 Epics, 35 User Stories mit Akzeptanzkriterien, MoSCoW-Priorisierung und Datenmodell-Entwurf → [Requirements](docs/01-understand/2026-11-12_requirements.md). Die Must- und Should-Stories sind als Issues im [Projektboard](https://github.com/users/mat058/projects/2) erfasst (#16–#34).
   - Vollständige Ausarbeitung: [Antworten Übung 8](docs/01-understand/2026-11-10_antworten-uebung8.md) · [PDF](docs/01-understand/Uebung8_Understand-Define_StudyDesk_Rotzer.pdf)
 - **Wesentliche Erkenntnisse:**
   - Es gibt viele Tools, aber jedes deckt nur einen Teil ab – der Überblick entsteht erst im Kopf der Studierenden.
@@ -81,6 +92,7 @@ Die Durchführung erfolgt phasenbasiert; dokumentiert die wichtigsten Ergebnisse
 
 ### 3.2 Sketch
 - **Variantenüberblick:** _[kurz]_
+- **Erste Ideen (Crazy 8s, Übung 9):** In der Kleinklasse entstanden acht schnelle Ideenskizzen (Crazy 8s) mit Peer-Voting und eine ausgearbeitete Skizze (Overview + Deadlines-Tabelle). Sie dienten als erster Ideenspeicher; die massgeblichen Varianten für StudyDesk wurden danach separat ausgearbeitet (siehe unten). → [Crazy 8s](docs/02-sketch/uebung9-kleinklasse/2026-11-12_uebung9_crazy8s-kleinklasse.jpg) · [Ausgearbeitete Skizze](docs/02-sketch/uebung9-kleinklasse/2026-11-12_uebung9_skizze-ausgearbeitet-kleinklasse.jpg)
 - **Skizzen:** _[Mehrere Varianten; Unterschiede kurz dokumentieren.]_
 
 ### 3.3 Decide
@@ -100,7 +112,7 @@ Beschreibt die Gestaltung und Interaktion.
 #### 3.4.2. Umsetzung (Technik)
 Fasst die technische Realisierung zusammen.
 - **Technologie-Stack:** SvelteKit 3 (verbindliche Vorgabe). _[Verwendete Bibliotheken ergänzen, falls genutzt.]_
-- **Tooling:** _[IDE/Erweiterungen, lokale/Cloud-Tools; den Einsatz von KI beschreibt ihr im Kapitel **KI-Deklaration**]_  
+- **Tooling:** Visual Studio Code, Git & GitHub (Repository, Issues, Project Board), MongoDB Atlas (Datenbank, Gratis-Cluster M0), Netlify (Deployment, automatisch bei Push auf `main`), Figma (Mockup). Den Einsatz von KI beschreibt Kapitel **KI-Deklaration**.  
 - **Vorgehen bei der Implementierung:** _[Wie wurde die Umsetzung schrittweise erarbeitet? Wie wurden Funktionen entwickelt, geprüft und überarbeitet? Bei KI-Unterstützung: Zusammenspiel zwischen eigener Arbeit und KI kurz beschreiben und für Details auf Kap. 6 verweisen.]_
 - **Struktur & Komponenten:** _[Seiten, Routen, State/Stores, wichtige Komponenten]_
 - **Daten & Schnittstellen:** _[Wie werden Daten gespeichert, verwaltet, abgerufen?]_
@@ -143,21 +155,21 @@ Hierzu gehören zusätzliche Funktionen und technische Verbesserungen am Prototy
 ### 4.2 Weitere Erweiterungen
 Hierzu gehören beispielsweise zusätzliche Methoden, Planungs- und Analyseartefakte, Verbesserungen der Projektorganisation oder Anpassungen eines KI-Agenten-Workflows.
 
-#### 4.2.1 [Titel der Erweiterung]
-- **Beschreibung & Nutzen:** _[Was wurde zusätzlich erarbeitet oder verbessert und welchen Mehrwert bietet es?]_
-- **Abgrenzung zum Mindestumfang:** _[Was geht konkret über die verbindlichen Anforderungen hinaus?]_
-- **Umsetzung:** _[Wie wurde vorgegangen und was ist das Ergebnis?]_
-- **Nachweise:** _[Screenshot(s) mit Erläuterung; Links auf Artefakte, Konfigurationen oder andere Ergebnisse; bei Code zusätzlich Referenzen auf die relevanten Codestellen]_
-- **Bezug zur Evaluation:** _[Wurde die Erweiterung aus der Evaluation abgeleitet? Falls ja: auf die betreffende Beobachtung bzw. das Issue verweisen. Andernfalls: «Nein».]_
+#### 4.2.1 Requirements Engineering: Epics, User Stories, MoSCoW
+- **Beschreibung & Nutzen:** Aus Personas und Problemanalyse wurden 7 Epics und 35 User Stories mit prüfbaren Akzeptanzkriterien abgeleitet, nach MoSCoW priorisiert und daraus ein Datenmodell-Entwurf erstellt. Nutzen: klarer, begründeter Umfang (was ist Mindestumfang, was Erweiterung), direkt testbare Kriterien für den Usability-Test und eine Grundlage für das Issue-Management.
+- **Abgrenzung zum Mindestumfang:** Der Unterricht verlangt Problemverständnis, Personas und Ideenfindung; User Stories mit Akzeptanzkriterien, MoSCoW-Priorisierung und Datenmodell stammen aus dem Modul Requirements Engineering und gehen darüber hinaus.
+- **Umsetzung:** Epics im Frage-Antwort-Verfahren erarbeitet (Entscheide in Abschnitt 1.1 der Requirements), Machbarkeit des PDF-Imports anhand echter ZHAW-Semesterprogramme geprüft, Stories mit Personas verknüpft, Must- und Should-Stories als GitHub-Issues (#16–#34) mit Akzeptanzkriterien als Checklisten angelegt.
+- **Nachweise:** [Requirements-Dokument](docs/01-understand/2026-11-12_requirements.md) · Issues #16–#34 im [Projektboard](https://github.com/users/mat058/projects/2) · _[Screenshot Board mit Feature-Issues folgt]_
+- **Bezug zur Evaluation:** Nein (vorgelagert). Die Akzeptanzkriterien und Annahmen (z. B. «Abgabe erfassen < 30 Sekunden») dienen als Grundlage für die Testaufgaben in Kap. 3.5.
 
 ## 5. Projektorganisation [Optional]
 
 > **Hinweis:** Verbesserungen der Projektorganisation, für die Erweiterungspunkte beansprucht werden, müssen nach dem Schema in Kap. 4.2 dokumentiert werden. Verweist dort bei Bedarf auf die Beschreibung in diesem Kapitel, um Wiederholungen zu vermeiden.
 
 Beispiele:
-- **Repository & Struktur:** Repository-Link siehe [Projektübersicht](#projektübersicht--zugänge). _[Kurze Strukturübersicht]_
-- **Issue-Management:** _[Vorgehen kurz beschreiben]_  
-- **Commit-Praxis:** _[z. B. sprechende Commits]_
+- **Repository & Struktur:** Repository-Link siehe [Projektübersicht](#projektübersicht--zugänge). Code in `src/` (DB-Zugriff zentral in `src/lib/server/db.js`), alle Artefakte nach Phasen in `docs/` ([Übersicht](docs/README.md)), Entscheide in [decisions.md](docs/decisions.md), KI-Einsatz in [ai-log.md](docs/ai-log.md), Quellen in [sources.md](docs/sources.md).
+- **Issue-Management:** Ein Issue pro Arbeitspaket bzw. User Story, mit Akzeptanzkriterien als Checkliste. Meilensteine je Phase (0 Setup bis 6 Abgabe), Labels (z. B. `feature`, `prio: must/should`, `artefakt`, `docs`, `usability`), Project Board als Kanban. Findings aus dem Usability-Test werden als eigene Issues erfasst.
+- **Commit-Praxis:** Kleine Commits mit einem Thema, Conventional Commits auf Deutsch (`feat:`, `fix:`, `docs:`, `refactor:`, `chore:`) mit Issue-Referenz (z. B. `#16`); Features auf Branches `feat/<name>`, Merge per Pull Request.
 
 ## 6. KI-Deklaration
 Die folgende Deklaration ist verpflichtend und beschreibt den Einsatz von KI im Projekt.
@@ -165,14 +177,14 @@ Die folgende Deklaration ist verpflichtend und beschreibt den Einsatz von KI im 
 > **Hinweis:** Dokumentiert den KI-Einsatz im gesamten Projekt, einschliesslich der Implementierung und eines allfälligen Einsatzes von KI-Agenten (Agentic Coding). Beschreibt die tatsächlich praktizierte Arbeitsweise. Falls keine KI eingesetzt wurde, gebt dies ausdrücklich an; die Unterkapitel 6.1–6.3 können dann entfallen.
 
 ### 6.1 KI-Tools
-- **Eingesetzte Tools**: _[z. B. Copilot, ChatGPT, Claude, lokale Modelle; Version/Variante wenn bekannt]_
+- **Eingesetzte Tools**: Claude (Anthropic) in der Desktop-App «Cowork» mit Zugriff auf den Projektordner, Modell claude-opus-5-5. _[wird bei weiteren Tools ergänzt, z. B. Claude Code in VS Code]_
 - **Zweck & Umfang**: _[wie, wofür und in welchem Ausmass wurde KI eingesetzt (z. B. Textentwürfe, Codevorschläge, Tests, Refactoring); welche Teile stammen (ganz/teilweise) aus KI-Unterstützung?]_
 - **Eigene Leistung (Abgrenzung):** _[was ist eigenständig erarbeitet/überarbeitet worden?]_
 
 ### 6.2 Vorgehen mit KI
 - **Arbeitsablauf & Aufgabenverteilung:** _[Wie wurde mit KI gearbeitet? Welche Aufgaben wurden selbst übernommen, welche an KI übertragen? Bei Agentic Coding: Welche Handlungsspielräume hatten die Agenten und wann wurde eingegriffen?]_
 - **Prompt-Vorgehen & Kontext:** _[Wie wurden Aufgaben formuliert und relevante Informationen bereitgestellt? Grundlegende Vorgehensweise beschreiben; konkrete Prompts höchstens als Beispiele aufführen.]_
-- **Konfiguration & Werkzeuge:** _[Falls verwendet: projektspezifische Agenten-Anweisungen, Konfigurationen, Kontextdateien und Tool-Anbindungen beschreiben und im Repository referenzieren. Andernfalls: «Keine».]_
+- **Konfiguration & Werkzeuge:** Projektspezifische Agenten-Anweisungen in [CLAUDE.md](CLAUDE.md) (Projektkontext, Code-Konventionen, Git- und Doku-Regeln, Grenzen wie «keine Secrets, kein Push ohne Bestätigung»); wiederverwendbare Befehle in [.claude/commands/](.claude/commands/) (`doku-check`, `erweiterung`, `session-end`); Prompt-Rezepte in [docs/prompts/](docs/prompts/). Jede KI-Session wird in [ai-log.md](docs/ai-log.md) protokolliert.
 - **Prüfung & Überarbeitung:** _[Wie wurden KI-Ergebnisse auf Korrektheit, Qualität und Urheberrecht/Quellen geprüft? Wie wurden Fehler erkannt und Ergebnisse überarbeitet?]_
 
 ### 6.3 Reflexion
@@ -183,7 +195,7 @@ _[Nutzen, Grenzen, Risiken/Qualitätssicherung, ...]_
 > **Hinweis zu Quellen und Urheberrecht:** Bei Verwendung fremder Inhalte (z. B. Code, Texte, Bilder, Icons, Vorlagen oder Modelle) sind die Quellen und die geltenden Lizenzen bzw. Nutzungsbedingungen anzugeben und einzuhalten. Diese Angaben sind verpflichtend, auch wenn der Anhang weggelassen wird. Sie können alternativ an den betreffenden Stellen der Dokumentation oder in einer verlinkten Quellenübersicht im Repository stehen. Erforderliche Hinweise direkt im Code oder bei verwendeten Inhalten bleiben zusätzlich bestehen.
 
 Beispiele:
-- **Quellen:** _[verwendete fremde Inhalte; Quelle/Link; Lizenz bzw. Nutzungsbedingungen]_
+- **Quellen:** siehe [Quellen & Lizenzen](docs/sources.md)
 - **Testskript & Materialien:** _[Link/Datei]_  
 - **Rohdaten/Auswertung:** _[Link/Datei]_  
 
