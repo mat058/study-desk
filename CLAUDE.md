@@ -1,6 +1,7 @@
 # CLAUDE.md – StudyDesk (Projektkontext für KI-Agenten)
 
 Type: solo-small
+Todo list: Study Desk
 
 ## Projekt
 - ZHAW Prototyping HS26, Einzelprojekt von Matteo Rotzer. Ziel: **Note 6** (100 Punkte).
