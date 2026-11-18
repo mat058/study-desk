@@ -2,6 +2,7 @@
 
 Type: solo-small
 Todo list: Study Desk
+Board: https://github.com/users/mat058/projects/2
 
 ## Projekt
 - ZHAW Prototyping HS26, Einzelprojekt von Matteo Rotzer. Ziel: **Note 6** (100 Punkte).
