@@ -1,5 +1,7 @@
 # CLAUDE.md – StudyDesk (Projektkontext für KI-Agenten)
 
+Type: solo-small
+
 ## Projekt
 - ZHAW Prototyping HS26, Einzelprojekt von Matteo Rotzer. Ziel: **Note 6** (100 Punkte).
 - **StudyDesk**: Webapp für Studierende, die Module, Leistungsnachweise/Deadlines und Lernzeit an einem Ort verwaltet (statt verteilt auf Moodle, Mail, Reminders). Zielgruppe: Studierende (ZHAW).
