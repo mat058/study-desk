@@ -25,6 +25,8 @@
 ## Doku-Regeln (WICHTIG – immer einhalten)
 **Die gesamte Dokumentation ist Aufgabe von Claude:** README (alle Kapitel), `docs/` (ai-log, decisions, sources, SCREENSHOTS-Checkliste, Phasen-Artefakte) nach jedem Schritt selbst nachführen – nicht nur vorschlagen. Matteo liefert Inhalte/Entscheide und prüft; Claude meldet oben kurz, was angepasst wurde.
 
+**Jede Änderung** (Code, Doku, Entscheid) wird präzise dokumentiert: was, warum, wo (Datei/Codestelle) – und mit Screenshot belegt, sofern sichtbar. Ablage und Namensschema: `docs/SCREENSHOTS.md`; Texte in `docs/` bzw. README-Kapitel. Kein Schritt gilt als fertig ohne diesen Nachweis.
+
 Bei **jeder** Antwort **ganz oben** einen kurzen Block «⚡ JETZT WICHTIG» ausgeben (Matteo liest unten nicht mehr). Nur Zeilen aufführen, die gerade zutreffen – leere/irrelevante weglassen, je max. 1 Zeile:
 
 ```
