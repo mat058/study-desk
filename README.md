@@ -168,7 +168,7 @@ Hierzu gehören beispielsweise zusätzliche Methoden, Planungs- und Analyseartef
 
 Beispiele:
 - **Repository & Struktur:** Repository-Link siehe [Projektübersicht](#projektübersicht--zugänge). Code in `src/` (DB-Zugriff zentral in `src/lib/server/db.js`), alle Artefakte nach Phasen in `docs/` ([Übersicht](docs/README.md)), Entscheide in [decisions.md](docs/decisions.md), KI-Einsatz in [ai-log.md](docs/ai-log.md), Quellen in [sources.md](docs/sources.md).
-- **Issue-Management:** Ein Issue pro Arbeitspaket bzw. User Story, mit Akzeptanzkriterien als Checkliste. Meilensteine je Phase (0 Setup bis 6 Abgabe), Labels (z. B. `feature`, `prio: must/should`, `artefakt`, `docs`, `usability`), Project Board als Kanban. Findings aus dem Usability-Test werden als eigene Issues erfasst.
+- **Issue-Management:** Ein Issue pro Arbeitspaket bzw. User Story, mit Akzeptanzkriterien als Checkliste. Meilensteine je Phase (0 Setup bis 6 Abgabe), Labels (z. B. `feature`, `bug`, `refactor`, `idea`, `prio: must/should`, `artefakt`, `docs`, `usability`, `erweiterung`), Project Board als Kanban mit den Spalten 💡 Ideen · 📋 Backlog · 🎯 Als Nächstes · In Arbeit · Erledigt (Could-Stories/Erweiterungen starten in «Ideen», geschlossene Issues wandern automatisch nach «Erledigt»). Nachweis: [Board mit Status-Spalten](docs/organisation/2026-11-18_board-status-spalten.png). Findings aus dem Usability-Test werden als eigene Issues erfasst.
 - **Commit-Praxis:** Kleine Commits mit einem Thema, Conventional Commits auf Deutsch (`feat:`, `fix:`, `docs:`, `refactor:`, `chore:`) mit Issue-Referenz (z. B. `#16`); Features auf Branches `feat/<name>`, Merge per Pull Request.
 
 ## 6. KI-Deklaration
