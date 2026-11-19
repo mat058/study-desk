@@ -8,7 +8,7 @@
 - **Einbinden in README:** `![Beschreibung](docs/04-prototype/screenshots/datei.png)` + 1–2 Sätze Erklärung darunter
 
 ## Checkliste (wird laufend abgehakt)
-- [ ] Skizzen-Varianten (Original + verbessert) → 3.2
+- [x] Skizzen-Varianten (Original + verbessert) → 3.2 (19.11.: iPad-PDF + 14 Wireframes)
 - [ ] Figma-Mockup, alle Screens → 3.3
 - [ ] User Journey Map → 3.3
 - [ ] Alle Hauptscreens der fertigen App → 3.4.1

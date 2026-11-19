@@ -95,6 +95,15 @@ Die Durchführung erfolgt phasenbasiert; dokumentiert die wichtigsten Ergebnisse
 - **Erste Ideen (Crazy 8s, Übung 9):** In der Kleinklasse entstanden acht schnelle Ideenskizzen (Crazy 8s) mit Peer-Voting und eine ausgearbeitete Skizze (Overview + Deadlines-Tabelle). Sie dienten als erster Ideenspeicher; die massgeblichen Varianten für StudyDesk wurden danach separat ausgearbeitet (siehe unten). → [Crazy 8s](docs/02-sketch/uebung9-kleinklasse/2026-11-12_uebung9_crazy8s-kleinklasse.jpg) · [Ausgearbeitete Skizze](docs/02-sketch/uebung9-kleinklasse/2026-11-12_uebung9_skizze-ausgearbeitet-kleinklasse.jpg)
 - **Skizzen (iPad, Original):** 11 Seiten von Hand – Login, Navigation/Dashboard, Abgabenliste, Abgaben als Kanban (v2), Modul-Space, Modulliste, Formulare Abgabe und Modul, Kalender, Archiv → [PDF](docs/02-sketch/original/2026-11-19_ipad-skizzen-original.pdf)
 - **Skizzen (verbessert, Wireframes):** in Figma als Graustufen-Wireframes nachgebaut und verbessert (14 Screens, inkl. neu Registrieren, Lernzeit, Noten und Navigations-Variante B). Jede Änderung ist im Figma unter dem Screen begründet; Übersicht und Liste der Änderungen: [docs/02-sketch/ai-improved/README.md](docs/02-sketch/ai-improved/README.md)
+- **Varianten im Vergleich:**
+
+  | Navigation A – Sidebar | Navigation B – Topbar |
+  |---|---|
+  | ![Dashboard Variante A](docs/02-sketch/ai-improved/2026-11-19_wf-03-dashboard-variante-a.png) | ![Dashboard Variante B](docs/02-sketch/ai-improved/2026-11-19_wf-04-dashboard-variante-b.png) |
+  | **Abgaben – Liste** | **Abgaben – Kanban** |
+  | ![Abgaben Liste](docs/02-sketch/ai-improved/2026-11-19_wf-05-abgaben-liste.png) | ![Abgaben Kanban](docs/02-sketch/ai-improved/2026-11-19_wf-06-abgaben-kanban.png) |
+
+  Alle 14 Wireframes als PNG: [docs/02-sketch/ai-improved/](docs/02-sketch/ai-improved/README.md)
 - **Wichtigste Verbesserungen:** fehlende Screens ergänzt (Registrieren, Lernzeit, Noten), einheitliche Aktionen oben rechts, Formulare mit Pflichtfeldern und sichtbarem Fehler-/Erfolgsfeedback, Import ins Modul verschoben, Kalender-Sync realistisch auf .ics-Abo reduziert, Kanban-Statuswechsel per Button statt Drag & Drop.
 
 ### 3.3 Decide
