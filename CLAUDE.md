@@ -1,6 +1,7 @@
 # CLAUDE.md – StudyDesk (Projektkontext für KI-Agenten)
 
 Type: solo-small
+Notion history: https://app.notion.com/p/4149c8c5db4c81a2a08dd3e0843f7cee
 Todo list: Study Desk
 Board: https://github.com/users/mat058/projects/2
 
