@@ -10,7 +10,7 @@
 | Aktuelle App | https://study-desk-mr.netlify.app |
 | Getestete Version | _[Link; Commit/Tag]_ |
 | Testzugänge | _[Testkonten je Rolle oder Bereitstellungsweg; andernfalls «Nicht erforderlich»]_ |
-| Figma / Referenz-Mockup | _[Direkter Link]_ |
+| Figma / Referenz-Mockup | https://www.figma.com/design/XofFCUkretdp9KRkDgiZRn (Seite «1 Wireframes (verbessert)»; Hi-Fi-Mockup folgt auf Seite «2 Mockup») |
 | Weitere Artefakte [Optional] | Projektboard: https://github.com/users/mat058/projects/2 |
 
 > **Zugriff:** Stellt sicher, dass alle Dozierenden auf das Repository, die App und die verlinkten Artefakte zugreifen können.
@@ -91,9 +91,11 @@ Die Durchführung erfolgt phasenbasiert; dokumentiert die wichtigsten Ergebnisse
   - Ohne offene Schnittstellen der Hochschulsysteme muss die Lösung manuelles Erfassen so schnell wie möglich machen und Mehrwert *auf* den erfassten Daten bieten (z. B. Widersprüche, Belastung).
 
 ### 3.2 Sketch
-- **Variantenüberblick:** _[kurz]_
+- **Variantenüberblick:** Navigation A (Sidebar) vs. B (Topbar) und Abgaben als Liste vs. Kanban; dazu 10 weitere Screens (Login, Registrieren, Abgabe-Formular, Module, Modul-Space, Modul-Formular, Kalender, Lernzeit, Noten, Archiv).
 - **Erste Ideen (Crazy 8s, Übung 9):** In der Kleinklasse entstanden acht schnelle Ideenskizzen (Crazy 8s) mit Peer-Voting und eine ausgearbeitete Skizze (Overview + Deadlines-Tabelle). Sie dienten als erster Ideenspeicher; die massgeblichen Varianten für StudyDesk wurden danach separat ausgearbeitet (siehe unten). → [Crazy 8s](docs/02-sketch/uebung9-kleinklasse/2026-11-12_uebung9_crazy8s-kleinklasse.jpg) · [Ausgearbeitete Skizze](docs/02-sketch/uebung9-kleinklasse/2026-11-12_uebung9_skizze-ausgearbeitet-kleinklasse.jpg)
-- **Skizzen:** _[Mehrere Varianten; Unterschiede kurz dokumentieren.]_
+- **Skizzen (iPad, Original):** 11 Seiten von Hand – Login, Navigation/Dashboard, Abgabenliste, Abgaben als Kanban (v2), Modul-Space, Modulliste, Formulare Abgabe und Modul, Kalender, Archiv → [PDF](docs/02-sketch/original/2026-11-19_ipad-skizzen-original.pdf)
+- **Skizzen (verbessert, Wireframes):** in Figma als Graustufen-Wireframes nachgebaut und verbessert (14 Screens, inkl. neu Registrieren, Lernzeit, Noten und Navigations-Variante B). Jede Änderung ist im Figma unter dem Screen begründet; Übersicht und Liste der Änderungen: [docs/02-sketch/ai-improved/README.md](docs/02-sketch/ai-improved/README.md)
+- **Wichtigste Verbesserungen:** fehlende Screens ergänzt (Registrieren, Lernzeit, Noten), einheitliche Aktionen oben rechts, Formulare mit Pflichtfeldern und sichtbarem Fehler-/Erfolgsfeedback, Import ins Modul verschoben, Kalender-Sync realistisch auf .ics-Abo reduziert, Kanban-Statuswechsel per Button statt Drag & Drop.
 
 ### 3.3 Decide
 - **Gewählte Variante & Begründung:** _[Entscheidkriterien nennen]_  
