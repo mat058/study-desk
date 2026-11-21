@@ -53,3 +53,9 @@ Bei **jeder** Antwort **ganz oben** einen kurzen Block «⚡ JETZT WICHTIG» aus
 - Keine Secrets lesen/ausgeben, `.env` nie committen.
 - Keine `git push` / Deploys ohne Bestätigung von Matteo.
 - Keine fremden Bilder/Code ohne Quellen- und Lizenzangabe.
+
+## Current status / next steps
+- Stand 2026-11-21: Understand/Define und Sketch abgeschlossen (Übung 9, Wireframes in Figma, README 3.2); Setup-Check mit `/adopt-project` ohne grössere Lücken.
+- Code: erst Grundgerüst (`db.js` ohne CRUD, Platzhalter-Startseite); keine Tests.
+- Als Nächstes: Variante wählen & Figma-Mockup (#9, #11) → Datenmodell/CRUD in `db.js` (#36) und Navigation (#37).
+- Mit echter Logik: Vitest einrichten (#46).
