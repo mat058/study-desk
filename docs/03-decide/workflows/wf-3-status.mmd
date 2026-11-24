@@ -1,0 +1,13 @@
+flowchart TD
+  A([Start: Was steht an?]) --> B[M04: Abgaben als Liste]
+  B --> C{Ansicht}
+  C -- Liste --> D[Filtern nach Modul, Status, Typ<br/>Sortieren nach Deadline]
+  C -- Kanban --> E[M05: Spalten Offen, In Arbeit, Erledigt]
+  D --> F[Status in der Zeile wählen]
+  E --> G[«Weiter →» auf der Karte]
+  F --> H[Status gespeichert]
+  G --> H
+  H --> I{Status = Erledigt?}
+  I -- ja --> J[Abgabe wandert zu «Erledigt»,<br/>Fortschritt im Dashboard steigt]
+  I -- nein --> B
+  J --> K([Ende])

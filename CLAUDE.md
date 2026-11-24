@@ -55,7 +55,8 @@ Bei **jeder** Antwort **ganz oben** einen kurzen Block «⚡ JETZT WICHTIG» aus
 - Keine fremden Bilder/Code ohne Quellen- und Lizenzangabe.
 
 ## Current status / next steps
-- Stand 2026-11-21: Understand/Define und Sketch abgeschlossen (Übung 9, Wireframes in Figma, README 3.2); Setup-Check mit `/adopt-project` ohne grössere Lücken.
+- Stand 2026-11-24: Understand/Define, Sketch und Decide abgeschlossen. Variante: Sidebar, Abgaben als Liste + Kanban (D16–D20). Klickbares Figma-Mockup (Seite «2 Mockup», 14 Screens + 4 Overlays) und Abgabe Übung 10 in `docs/03-decide/`.
+- Mockup-PNGs liegen in `docs/03-decide/mockup/`. Offen: Quelle des Login-Hintergrundbilds (Herbstwald) in `docs/sources.md` nachtragen.
 - Code: erst Grundgerüst (`db.js` ohne CRUD, Platzhalter-Startseite); keine Tests.
-- Als Nächstes: Variante wählen & Figma-Mockup (#9, #11) → Datenmodell/CRUD in `db.js` (#36) und Navigation (#37).
+- Als Nächstes (Übung 11): Datenmodell/CRUD in `db.js` (#36), Navigation/Sidebar nach Mockup (#37), dann Login.
 - Mit echter Logik: Vitest einrichten (#46).

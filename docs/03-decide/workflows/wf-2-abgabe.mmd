@@ -1,0 +1,13 @@
+flowchart TD
+  A([Start: neue Abgabe wird angekündigt]) --> B[«+ Abgabe» oben rechts<br/>auf Dashboard, Abgaben oder Kalender]
+  B --> C[M06: Titel, Modul, Typ, Deadline,<br/>Priorität, Status, Notiz]
+  C --> D{Pflichtfelder ausgefüllt?<br/>Titel, Modul, Deadline}
+  D -- nein --> C2[Fehlermeldung am Feld]
+  C2 --> C
+  D -- ja --> E[Speichern]
+  E --> F[M04: Liste mit neuer Abgabe + Erfolgsmeldung]
+  F --> I([Ende: Abgabe ist erfasst])
+  F -. später: Bearbeiten .-> C
+  C -- Löschen --> H{M14: Rückfrage<br/>«Abgabe löschen?»}
+  H -- Abbrechen --> C
+  H -- Endgültig löschen --> F2[M04: Liste ohne die Abgabe]

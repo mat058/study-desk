@@ -1,0 +1,14 @@
+flowchart TD
+  A([Start: Semesterbeginn]) --> B[M07: Module] --> C[«+ Modul»]
+  C --> D{Semesterplan als PDF vorhanden?}
+  D -- ja --> E[M09: PDF wählen, Termine werden vorgeschlagen] --> F
+  D -- nein --> F[M09: Name, Kürzel, Semester, ECTS,<br/>Dozierende, Farbe]
+  F --> G{Gültig?<br/>Pflichtfelder, Kürzel pro Semester eindeutig}
+  G -- nein --> F2[Fehlermeldung] --> F
+  G -- ja --> H[Modul speichern] --> I[M07: neue Modulkarte]
+  I --> J[M08: Modul-Space öffnen]
+  J --> K[Abgaben abhaken, Notizen erfassen,<br/>Noten mit Gewichtung eintragen]
+  K --> L{Semester vorbei?}
+  L -- ja --> M[Archivieren] --> N[M13: Archiv, nur lesbar]
+  L -- nein --> J
+  N --> O([Ende])

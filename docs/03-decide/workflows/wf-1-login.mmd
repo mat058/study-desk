@@ -1,0 +1,11 @@
+flowchart TD
+  A([Start: App öffnen]) --> B{Konto vorhanden?}
+  B -- nein --> C[M02: Name, E-Mail, Passwort 2x eingeben]
+  C --> D{Eingaben gültig?<br/>Passwort ≥ 8 Zeichen, beide gleich,<br/>E-Mail noch frei}
+  D -- nein --> C2[Fehlermeldung am Feld] --> C
+  D -- ja --> G
+  B -- ja --> E[M01: E-Mail + Passwort eingeben]
+  E --> F{Login korrekt?}
+  F -- nein --> E2[Meldung «E-Mail oder Passwort falsch»] --> E
+  F -- ja --> G[M03: Dashboard mit nächsten Abgaben]
+  G --> H([Ende: Überblick über das Semester])

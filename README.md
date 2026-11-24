@@ -10,7 +10,7 @@
 | Aktuelle App | https://study-desk-mr.netlify.app |
 | Getestete Version | _[Link; Commit/Tag]_ |
 | Testzugänge | _[Testkonten je Rolle oder Bereitstellungsweg; andernfalls «Nicht erforderlich»]_ |
-| Figma / Referenz-Mockup | https://www.figma.com/design/XofFCUkretdp9KRkDgiZRn (Seite «1 Wireframes (verbessert)»; Hi-Fi-Mockup folgt auf Seite «2 Mockup») |
+| Figma / Referenz-Mockup | Klickbarer Prototyp: https://www.figma.com/proto/XofFCUkretdp9KRkDgiZRn/StudyDesk?page-id=1%3A3&node-id=11-332&starting-point-node-id=11%3A332&scaling=scale-down · Design-Datei: https://www.figma.com/design/XofFCUkretdp9KRkDgiZRn (Seite «2 Mockup»; Seite «1 Wireframes (verbessert)» = Vorstufe) |
 | Weitere Artefakte [Optional] | Projektboard: https://github.com/users/mat058/projects/2 |
 
 > **Zugriff:** Stellt sicher, dass alle Dozierenden auf das Repository, die App und die verlinkten Artefakte zugreifen können.
@@ -107,9 +107,21 @@ Die Durchführung erfolgt phasenbasiert; dokumentiert die wichtigsten Ergebnisse
 - **Wichtigste Verbesserungen:** fehlende Screens ergänzt (Registrieren, Lernzeit, Noten), einheitliche Aktionen oben rechts, Formulare mit Pflichtfeldern und sichtbarem Fehler-/Erfolgsfeedback, Import ins Modul verschoben, Kalender-Sync realistisch auf .ics-Abo reduziert, Kanban-Statuswechsel per Button statt Drag & Drop.
 
 ### 3.3 Decide
-- **Gewählte Variante & Begründung:** _[Entscheidkriterien nennen]_  
-- **End-to-End-Ablauf:** _[Beschreibung inkl. User Journey Map]_  
-- **Mockup:** Link siehe «Figma / Referenz-Mockup» in der [Projektübersicht](#projektübersicht--zugänge). _[Screenshots mit kurzen Beschreibungen]_
+- **Gewählte Variante & Begründung:** Navigation **A (Sidebar)** und Abgaben als **Liste + Kanban mit Umschalter**. Kriterien: Platz für 7 Hauptbereiche, Erweiterbarkeit, Orientierung (aktiver Bereich sichtbar), Nutzen für beide Personas, Aufwand. Die Topbar (B) gibt mehr Breite, wird aber mit Menü und Schnellaktionen eng. Liste und Kanban zeigen dieselben Daten: Liste zum Filtern und Sortieren, Kanban für den Stand auf einen Blick. Vereinfachungen: .ics-Abo statt Kalender-Sync, Statuswechsel per Button statt Drag & Drop, Import im Modul. Desktop-first (1280 px). → Entscheide D16–D20 in [docs/decisions.md](docs/decisions.md), alle 12 Designentscheide in der [Abgabe Übung 10](docs/03-decide/uebung10_abgabe.md)
+- **End-to-End-Ablauf:** Login → Dashboard («Was ist als Nächstes fällig?») → «+ Abgabe» → Formular speichern → Abgabe erscheint in Liste/Kanban → Status ändern bis «Erledigt» → Fortschritt im Dashboard steigt. Module werden in «Module» angelegt und im Modul-Space gepflegt (Abgaben, Notizen, Noten), am Semesterende archiviert. User Journey Map (SOLL, Persona Leonie): [Abgabe Übung 9, Kap. 6](docs/02-sketch/uebung9-kleinklasse/uebung9_abgabe.md). Workflows als Flowcharts:
+
+  ![Screen-Flow des Prototyps](docs/03-decide/workflows/wf-0-screenflow.png)
+
+  Einzelne Workflows: [Login](docs/03-decide/workflows/wf-1-login.png) · [Abgabe erfassen/bearbeiten/löschen](docs/03-decide/workflows/wf-2-abgabe.png) · [Status ändern](docs/03-decide/workflows/wf-3-status.png) · [Modul anlegen bis archivieren](docs/03-decide/workflows/wf-4-modul.png)
+- **Mockup:** klickbar in Figma, 14 Screens + 4 Overlays (Löschen bestätigen, Noten einstellen mit Wunschnote, Widgets anpassen, Kalender abonnieren), Start bei «M01 Login» (Link in der [Projektübersicht](#projektübersicht--zugänge)). Abgabe Übung 10 mit Designentscheiden und durchgespielten Workflows: [PDF](docs/03-decide/Uebung10_UI-Prototyping_StudyDesk_Rotzer.pdf).
+
+  | Dashboard (M03) | Abgaben – Liste (M04) |
+  |---|---|
+  | ![Dashboard](docs/03-decide/mockup/2026-11-24_m03-dashboard.png) | ![Abgaben Liste](docs/03-decide/mockup/2026-11-24_m04-abgaben-liste.png) |
+  | **Abgaben – Kanban (M05)** | **Abgabe-Formular (M06)** |
+  | ![Abgaben Kanban](docs/03-decide/mockup/2026-11-24_m05-abgaben-kanban.png) | ![Abgabe-Formular](docs/03-decide/mockup/2026-11-24_m06-abgabe-formular.png) |
+
+  Dashboard beantwortet die Kernfrage nach dem Login; die Abgaben lassen sich oben rechts zwischen Liste und Kanban umschalten; das Formular liegt als Modal über der Liste und ist für Erfassen und Bearbeiten dasselbe. Alle Screens: [docs/03-decide/mockup/](docs/03-decide/mockup/)
 
 ### 3.4 Prototype
 

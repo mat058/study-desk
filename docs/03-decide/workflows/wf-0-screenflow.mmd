@@ -1,0 +1,25 @@
+flowchart TD
+  M01[M01 Login] -->|Anmelden| M03[M03 Dashboard]
+  M01 <-->|Registrieren / Anmelden| M02[M02 Registrieren]
+  M02 -->|Konto erstellen| M03
+  M03 --- NAV{{Sidebar: auf jedem Screen}}
+  NAV --> M04[M04 Abgaben Liste]
+  NAV --> M07[M07 Module]
+  NAV --> M10[M10 Kalender]
+  NAV --> M11[M11 Lernzeit]
+  NAV --> M12[M12 Noten]
+  NAV --> M13[M13 Archiv]
+  M04 <-->|Umschalter| M05[M05 Abgaben Kanban]
+  M04 -->|+ Abgabe / Bearbeiten| M06[M06 Abgabe-Formular]
+  M05 -->|Karte| M06
+  M10 -->|Termin-Chip| M06
+  M06 -->|Speichern / Abbrechen| M04
+  M06 -->|Löschen| M14[M14 Rückfrage Overlay]
+  M14 -->|Endgültig löschen| M04
+  M07 -->|Modulkarte| M08[M08 Modul-Space]
+  M07 -->|+ Modul| M09[M09 Modul-Formular]
+  M08 -->|Bearbeiten / Import| M09
+  M09 -->|Speichern / Abbrechen| M07
+  M08 -->|Archivieren| M13
+  M12 -->|Noten eintragen| M08
+  NAV -->|Abmelden| M01

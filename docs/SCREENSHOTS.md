@@ -9,8 +9,8 @@
 
 ## Checkliste (wird laufend abgehakt)
 - [x] Skizzen-Varianten (Original + verbessert) → 3.2 (19.11.: iPad-PDF + 14 Wireframes)
-- [ ] Figma-Mockup, alle Screens → 3.3
-- [ ] User Journey Map → 3.3
+- [x] Figma-Mockup, alle Screens → 3.3 (24.11.: 14 Screens + 4 Overlays in `docs/03-decide/mockup/`; Verbindungen zwischen den Screens als Screen-Flow in `docs/03-decide/workflows/wf-0-screenflow.png`)
+- [x] User Journey Map → 3.3 (aus Übung 9 verlinkt; Workflows als Flowcharts in `docs/03-decide/workflows/`)
 - [ ] Alle Hauptscreens der fertigen App → 3.4.1
 - [ ] Getestete Version (Startseite mit sichtbarer Version) → 3.5
 - [ ] Vorher/Nachher jeder Verbesserung aus der Evaluation → 3.5 / 4
