@@ -16,4 +16,8 @@
 - [ ] Vorher/Nachher jeder Verbesserung aus der Evaluation → 3.5 / 4
 - [ ] Jede Erweiterung → 4.x
 - [ ] GitHub Board, Issues, Commit-Historie → 4.2 / 5
-- [ ] CLAUDE.md / Agent-Konfiguration → 4.2 / 6
+- [ ] Agent-Workflow: Ausgabe `/doku-check` in Claude Code → `docs/extensions/JJJJ-MM-TT_agent-doku-check.png` (4.2.2)
+- [ ] Agent-Workflow: `/model` mit «opusplan» in Claude Code → `docs/extensions/JJJJ-MM-TT_agent-opusplan.png` (4.2.2)
+- [ ] Ausgabe `/security-check` nach Login → `docs/extensions/JJJJ-MM-TT_security-check.png` (4.2.2)
+- [ ] Commit-Historie (Conventional Commits) → `docs/organisation/JJJJ-MM-TT_commit-historie.png` (4.2.3)
+- [ ] Erster Pull Request → `docs/organisation/JJJJ-MM-TT_pull-request.png` (4.2.3)

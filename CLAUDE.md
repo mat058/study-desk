@@ -11,6 +11,7 @@ Board: https://github.com/users/mat058/projects/2
 - Webapp mit **SvelteKit 3** (Svelte 5, Runes), JavaScript, **MongoDB Atlas**, Deployment auf **Netlify**.
 - Aufgabenstellung & Bewertung: siehe `README.md` (Vorlage) und `docs/`.
 - Methodik in 5 Phasen: Understand/Define → Sketch → Decide → Prototype → Validate.
+- KI-Modelle (D21): Chat mit Opus; Claude Code mit `opusplan` (`.claude/settings.json`) – Planung im Plan-Modus (Opus), Umsetzung mit Sonnet. Bug nach 2 erfolglosen Versuchen → `/model opus` für die Diagnose. Vor Merge von Login/Auth → `/security-check` im Plan-Modus. Verwendetes Modell und Skills/Commands in jedem `docs/ai-log.md`-Eintrag nennen.
 
 ## Pflicht-Anforderungen (nie gefährden)
 - Daten aus der DB laden **und** erstellen/bearbeiten können (CRUD), mehrere Pages, Navigation/Workflows.
